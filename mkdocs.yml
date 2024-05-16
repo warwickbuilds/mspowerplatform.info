@@ -1,7 +1,7 @@
 site_name: MS Power Platform Info
 site_url: https://warwickofthegh.github.io/mspowerplatform.info/
 repo_url: https://github.com/warwickofthegh/mspowerplatform.info
-repo_name: warwickofthegh/mspowerplatform.info
+repo_name: Github
 edit_uri: edit/main/docs/
 
 # nav:
@@ -11,10 +11,12 @@ edit_uri: edit/main/docs/
 #   - reference.md
 #   - explanation.md
 
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
-  logo: assets/logo.png
+  #logo: assets/logo.png
   favicon: images/favicon.png
   icon:
     repo: fontawesome/brands/github
@@ -31,39 +33,42 @@ theme:
     - content.action.edit
   language: en
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+    # # Palette toggle for automatic mode
+    # - media: "(prefers-color-scheme)"
+    #   primary: custom
+    #   toggle:
+    #     icon: material/brightness-auto
+    #     name: Switch to light mode
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
+      primary: teal
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny-off
         name: Switch to system preference
 
-    # - scheme: default
-    #   toggle:
-    #     icon: material/brightness-4
-    #     name: Switch to dark mode
-    #   primary: teal
-    #   accent: purple 
+  # - scheme: default
+  #   toggle:
+  #     icon: material/brightness-4
+  #     name: Switch to dark mode
+  #   primary: teal
+  #   accent: purple 
 
-    # - scheme: slate 
-    #   toggle:
-    #     icon: material/brightness-7
-    #     name: Switch to light mode    
-    #   primary: teal
-    #   accent: lime
+  # - scheme: slate 
+  #   toggle:
+  #     icon: material/brightness-7
+  #     name: Switch to light mode    
+  #   primary: teal
+  #   accent: lime
 
 plugins:
   - search
