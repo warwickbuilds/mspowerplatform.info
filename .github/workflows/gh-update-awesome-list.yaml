@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * *'  # Run daily
   workflow_dispatch:  # Allow manual trigger
 
+permissions:
+  contents: write  # Grant write access to contents
+
 jobs:
   update-list:
     runs-on: ubuntu-latest
