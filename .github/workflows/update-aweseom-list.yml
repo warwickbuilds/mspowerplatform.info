@@ -1,0 +1,25 @@
+name: Update Awesome List
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Fetch Awesome List
+        run: |
+          curl https://raw.githubusercontent.com/warwickbuilds/awesome-power-platform/refs/heads/main/readme.md > src/awesome-power-platform.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add docs/awesome-list.md
+          git commit -m "Update awesome list" || exit 0
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
