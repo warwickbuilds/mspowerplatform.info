@@ -1,5 +1,5 @@
 ---
-title: Awesome Power Platform
+title: Awesome Power Platform2
 editUrl: https://github.com/warwickbuilds/awesome-power-platform/edit/main/readme.md
 showLastUpdateTime: true
 ---
