@@ -13,9 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
       - name: Fetch Awesome List
         run: |
           curl https://raw.githubusercontent.com/warwickbuilds/awesome-power-platform/refs/heads/main/readme.md > src/awesome-power-platform.md
+      - name: Prepend Text
+        run: |
+            echo "## Additional Information" > src/_awesome-page-base.md
+            cat src/awesome-power-platform.md >> src/_awesome-page-base.md
+            mv src/_awesome-page-base.md src/awesome-power-platform.md
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
