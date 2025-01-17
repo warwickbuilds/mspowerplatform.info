@@ -32,19 +32,7 @@ const config = {
   future: {
     experimental_faster: true,
   },
-
-  plugins: [
-    [
-      '@docusaurus/plugin-content-pages',
-      {
-        path: 'src/pages', // Path to your pages directory
-        routeBasePath: '', // Set the base path for the pages
-        include: ['**/*.{js,jsx,ts,tsx,md,mdx}'], // Include all relevant file types
-        editUrl: 'https://github.com/warwickbuilds/awesome-power-platform/edit/main/', // Base URL for editing
-      },
-    ],
-  ],
-
+  
   presets: [
     [
       'classic',
@@ -57,6 +45,12 @@ const config = {
             'https://github.com/' + 'warwickbuilds' + '/' + 'mspowerplatform.info' + '/edit/main/',
         },
         blog: false,
+        pages: {
+          path: 'src/pages', // Path to your pages directory
+          routeBasePath: '', // Set the base path for the pages
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'], // Include all relevant file types
+          editUrl: 'https://github.com/warwickbuilds/awesome-power-platform/edit/main/', // Base URL for editing
+        },
       }),
     ],
   ],
