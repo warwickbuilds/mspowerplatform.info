@@ -48,8 +48,8 @@ const config = {
         pages: {
           path: 'src/pages', // Path to your pages directory
           routeBasePath: '', // Set the base path for the pages
-          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'], // Include all relevant file types
-          editUrl: 'https://github.com/warwickbuilds/awesome-power-platform/edit/main/', // Base URL for editing
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'] // Include all relevant file types
+          // editUrl: 'https://github.com/warwickbuilds/awesome-power-platform/edit/main/', // Base URL for editing
         },
       }),
     ],
