@@ -13,15 +13,16 @@ const config = {
   title: 'MS Power Platform Info',
   tagline: 'Community curated information and links for the Microsoft Power Platform',
   favicon: 'img/favicon.ico',
-  url: 'https://mspowerplatforminfo.github.io',
+  url: 'https://mspowerplatform.info',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // GitHub pages deployment config.
-  organizationName: 'MS Power Platform Community',
-  projectName: 'mspowerplatforminfo',
+  organizationName: 'warwickbuilds',
+  projectName: 'mspowerplatform.info',
   deploymentBranch: 'gh-pages',
+  trailingSlash: false,
 
   i18n: {
     defaultLocale: 'en',
