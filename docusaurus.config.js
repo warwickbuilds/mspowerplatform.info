@@ -63,7 +63,7 @@ const config = {
           {to: '/awesome-power-platform', label: 'Awesome List', position: 'left'},
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docs',
             position: 'left',
             label: 'Guides and Informaton',
           },

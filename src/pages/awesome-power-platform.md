@@ -1,14 +1,36 @@
 ---
 title: Awesome MS Power Platform
+editUrl: https://github.com/warwickbuilds/awesome-power-platform/edit/main/readme.md
+showLastUpdateTime: true
 ---
 
-# Awesome MS Power Platform
+# Awesome Power Platform [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
+> A curated list of Microsoft Power Platform resources and information
 
 
-## Category 1
-- [Resource 1](https://example.com)
-- [Resource 2](https://example.com)
+## Contents
 
-## Category 2
-- [Resource 3](https://example.com)
-- [Resource 4](https://example.com)
+- [Section](#section)
+- [Another Section](#another-section)
+
+
+## Section
+
+About this section. Optional. Keep this short and focus on the list.
+
+- [List item](http://example.com)
+- [List item](http://example.com)
+
+
+## Another Section
+
+### Subsection
+
+- [List item](http://example.com)
+- [List item](http://example.com)
+
+
+## Contribute
+
+Contributions welcome! Read the [contribution guidelines](contributing.md) first.

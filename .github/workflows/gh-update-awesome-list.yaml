@@ -16,16 +16,16 @@ jobs:
       
       - name: Fetch Awesome List
         run: |
-          curl https://raw.githubusercontent.com/warwickbuilds/awesome-power-platform/refs/heads/main/readme.md > src/awesome-power-platform.md
+          curl https://raw.githubusercontent.com/warwickbuilds/awesome-power-platform/refs/heads/main/readme.md > src/pages/awesome-power-platform.md
       - name: Prepend Text
         run: |
-            cat src/_awesome-page-base.md src/awesome-power-platform.md > src/_awesome-page-temp.md
-            mv src/_awesome-page-temp.md src/awesome-power-platform.md
+            cat src/pages/_awesome-page-base.md src/pages/awesome-power-platform.md > src/pages/_awesome-page-temp.md
+            mv src/pages/_awesome-page-temp.md src/pages/awesome-power-platform.md
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add src/awesome-power-platform.md
+          git add src/pages/awesome-power-platform.md
           git commit -m "Update awesome list" || exit 0
       - name: Push changes
         uses: ad-m/github-push-action@master
