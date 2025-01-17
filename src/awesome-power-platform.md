@@ -1,3 +1,4 @@
+## Additional Information
 # Awesome Power Platform [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of Microsoft Power Platform resources and information
