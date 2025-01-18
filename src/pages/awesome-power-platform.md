@@ -1,5 +1,5 @@
 ---
-title: Awesome MS Power Platform
+title: Awesome Power Platform
 editUrl: https://github.com/warwickbuilds/awesome-power-platform/edit/main/readme.md
 showLastUpdateTime: true
 ---
@@ -30,7 +30,7 @@ About this section. Optional. Keep this short and focus on the list.
 - [List item](http://example.com)
 - [List item](http://example.com)
 
-test
+
 ## Contribute
 
 Contributions welcome! Read the [contribution guidelines](contributing.md) first.
